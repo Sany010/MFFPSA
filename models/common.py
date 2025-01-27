@@ -1,7 +1,4 @@
-# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
-"""
-Common modules
-"""
+
 
 import json
 import math
@@ -77,8 +74,7 @@ class PolarizedSelfAttention(nn.Module):
 
     
 class MSCAAttention(nn.Module):
-    # SegNext NeurIPS 2022
-    # https://github.com/Visual-Attention-Network/SegNeXt/tree/main
+
     def __init__(self, dim):
         super().__init__()
         self.conv0 = nn.Conv2d(dim, dim, 5, padding=2, groups=dim)
